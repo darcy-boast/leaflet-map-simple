@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">EDIT map title</div>
+  <div id="map-title">NCSU Campus</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -27,8 +27,8 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [41.77, -72.69], // EDIT coordinates to re-center map
-    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    center: [35.7833967,-78.6732681], // EDIT coordinates to re-center map
+    zoom: 14,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false
   });
 
@@ -41,8 +41,20 @@
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  L.marker([35.7833967,-78.6732681]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Talley Student Union"); // EDIT pop-up text message
+
+  /* Display a point marker with pop-up text */
+  L.marker([35.787478,-78.6719738]).addTo(map) // EDIT marker coordinates
+  .bindPopup("D. H. Hill Jr. Library"); // EDIT pop-up text message
+
+  /* Display a point marker with pop-up text */
+  L.marker([35.7861392,-78.666065]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Memorial Belltower"); // EDIT pop-up text message
+
+  /* Display a point marker with pop-up text */
+  L.marker([35.7819,-78.6765589]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Jordan Hall"); // EDIT pop-up text message
 
   </script>
 </body>
